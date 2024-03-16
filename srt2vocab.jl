@@ -47,7 +47,7 @@ end
 
 # Workflow
 # get common words
-df[df.freq_film .> 3, :][1:50, :] |> print
+film_words = df[df.freq_film .> 1, :][1:50, :].word #|> x->join(x, " ")
 # copy-paste here
 # delete ones that are names etc
 # translate ones that seem interesting with https://www.wordreference.com/fren/
