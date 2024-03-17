@@ -1,6 +1,10 @@
 #!/bin/julia
 using DataFrames, CSV
 
+# if you need to extract from mkv
+# mkvmerge -i some_movie.mkv
+# mkvextract tracks <your_mkv_video> <track_number>:output_file.srt
+
 sub_file = "SUBTITLE FILE GOES HERE"
 freqs = CSV.read("data/freqs/french.csv", DataFrame)
 
